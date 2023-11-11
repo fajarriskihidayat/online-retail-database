@@ -1,3 +1,4 @@
+-- membuat tabel users
 CREATE TABLE users (
 	id INT PRIMARY KEY auto_increment,
 	name VARCHAR(255) NOT NULL,
@@ -6,6 +7,7 @@ CREATE TABLE users (
 	address VARCHAR(255) NOT NULL
 );
 
+-- membuat tabel products
 CREATE TABLE products (
  id INT PRIMARY KEY auto_increment,
  name VARCHAR(255) NOT NULL UNIQUE,
@@ -14,6 +16,7 @@ CREATE TABLE products (
  stock INT
 );
 
+-- membuat tabel transactions
 CREATE TABLE transactions (
  id INT PRIMARY KEY auto_increment,
  no_order VARCHAR(5) UNIQUE,
@@ -21,6 +24,7 @@ CREATE TABLE transactions (
  paid_amount INT
 );
 
+-- membuat tabel transaction_detail
 CREATE TABLE transaction_detail (
  id INT PRIMARY KEY auto_increment,
  no_order VARCHAR(5),
