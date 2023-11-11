@@ -1,0 +1,31 @@
+CREATE TABLE users (
+	id INT PRIMARY KEY auto_increment,
+	name VARCHAR(255) NOT NULL,
+	username VARCHAR(255) NOT NULL UNIQUE,
+	password VARCHAR(255) NOT NULL,
+	address VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE products (
+ id INT PRIMARY KEY auto_increment,
+ name VARCHAR(255) NOT NULL UNIQUE,
+ category VARCHAR(255) NOT NULL,
+ price INT,
+ stock INT
+);
+
+CREATE TABLE transactions (
+ id INT PRIMARY KEY auto_increment,
+ no_order VARCHAR(5) UNIQUE,
+ user_id INT,
+ total_price INT,
+ paid_amount INT
+);
+
+CREATE TABLE transaction_detail (
+ id INT PRIMARY KEY auto_increment,
+ no_order VARCHAR(5),
+ product_id INT,
+ quantity INT
+);
+
