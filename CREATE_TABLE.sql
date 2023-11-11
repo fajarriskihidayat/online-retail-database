@@ -17,7 +17,6 @@ CREATE TABLE products (
 CREATE TABLE transactions (
  id INT PRIMARY KEY auto_increment,
  no_order VARCHAR(5) UNIQUE,
- user_id INT,
  total_price INT,
  paid_amount INT
 );
@@ -25,6 +24,7 @@ CREATE TABLE transactions (
 CREATE TABLE transaction_detail (
  id INT PRIMARY KEY auto_increment,
  no_order VARCHAR(5),
+ user_id INT,
  product_id INT,
  quantity INT
 );
