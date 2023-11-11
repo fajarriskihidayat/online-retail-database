@@ -21,7 +21,8 @@ CREATE TABLE transactions (
  id INT PRIMARY KEY auto_increment,
  no_order VARCHAR(5) UNIQUE,
  total_price INT,
- paid_amount INT
+ paid_amount INT,
+ date DATE
 );
 
 -- membuat tabel transaction_detail

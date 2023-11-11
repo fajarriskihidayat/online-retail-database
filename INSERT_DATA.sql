@@ -29,19 +29,19 @@ INSERT INTO products(name, category, price, stock) VALUES
 ("Shampoo", "perawatan pribadi", 12000, 60);
 
 -- menambahkan 12 data ke dalam tabel transactions
-INSERT INTO transactions(no_order, total_price, paid_amount) VALUES
-("O136", 23000, 25000),
-("O137", 32000, 35000),
-("O138", 45000, 48000),
-("O139", 58000, 60000),
-("O140", 72000, 75000),
-("O141", 85000, 90000),
-("O142", 92000, 95000),
-("O143", 105000, 110000),
-("O144", 123000, 125000),
-("O145", 135000, 140000),
-("O146", 15000, 18000),
-("O147", 42000, 45000);
+INSERT INTO transactions(no_order, total_price, paid_amount, date) VALUES
+("O136", 23000, 25000, '2023-10-05'),
+("O137", 32000, 35000, '2023-10-07'),
+("O138", 45000, 48000, '2023-10-08'),
+("O139", 58000, 60000, '2023-10-11'),
+("O140", 72000, 75000, '2023-10-13'),
+("O141", 85000, 90000, '2023-10-15'),
+("O142", 92000, 95000, '2023-10-18'),
+("O143", 105000, 110000, '2023-10-20'),
+("O144", 123000, 125000, '2023-10-21'),
+("O145", 135000, 140000, '2023-10-24'),
+("O146", 15000, 18000, '2023-11-02'),
+("O147", 42000, 45000, '2023-11-07');
 
 -- menambahkan 14 data ke dalam tabel transaction_detail
 INSERT INTO transaction_detail(no_order, user_id, product_id, quantity) VALUES
