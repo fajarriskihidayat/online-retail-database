@@ -22,7 +22,7 @@ CREATE TABLE transactions (
  no_order VARCHAR(5) UNIQUE,
  total_price INT,
  paid_amount INT,
- date DATE
+ date_buy DATE
 );
 
 -- membuat tabel transaction_detail
